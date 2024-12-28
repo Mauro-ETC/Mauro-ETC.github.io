@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Mauro</title>
+    <style>
+        .content-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .section {
+            padding: 0 2rem;
+            border-radius: 4px;
+            transition: var(--transition);
+        }
+        
+        .section:hover {
+            transform: translateY(-5px);
+        }
+        
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            letter-spacing: -0.05em;
+            margin-bottom: 1.5rem;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 1.77rem 1rem;
+        }
+        
+        .skill-item {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1rem;
+            border-radius: 2rem;
+            text-align: center;
+            font-size: 0.875rem;
+            letter-spacing: 0.1em;
+            transition: var(--transition);
+        }
+        
+        .skill-item:hover,
+        .award-item:hover,
+        .stat-item:hover,
+        .language-item:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+        
+        .award-item {
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.1);
+            margin-bottom: 1rem;
+            border-radius: 4px;
+        }
+        
+        .award-title {
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        
+        .award-desc {
+            font-size: 0.875rem;
+            opacity: 0.7;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            max-width: 1400px;
+            margin: 1rem auto;
+        }
+        
+        .stat-item {
+            text-align: center;
+            padding: 2rem;
+            background: var(--color-accent);
+            border-radius: 4px;
+            transition: var(--transition);
+            background-color: transparent;
+        }
+        
+        .stat-item:hover {
+            transform: translateY(-5px);
+        }
+        
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 700;
+            letter-spacing: -0.05em;
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat-label {
+            font-size: 0.875rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            opacity: 0.7;
+        }
+        
+        .languages-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+        
+        .language-item {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1rem;
+            border-radius: 4px;
+            text-align: center;
+            height: 61px;
+        }
+        
+        .language-name {
+            font-weight: 700;
+            margin-bottom: -6px;
+        }
+        
+        .language-level {
+            font-size: 0.875rem;
+            opacity: 0.3;
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="main">
+        <header class="header">
+            <h1 class="title">ABOUT</h1>
+            <p class="subtitle">Award-winning Digital Artist & Developer</p>
+        </header>
+
+        <div class="content-grid">
+            <section class="section">
+                <h2 class="section-title">Expertise</h2>
+                <div class="skills-grid">
+                    <div class="skill-item">Motion Design</div>
+                    <div class="skill-item">Animation</div>
+                    <div class="skill-item">Video Production</div>
+                    <div class="skill-item">Web Development</div>
+                    <div class="skill-item">Creative Direction</div>
+                    <div class="skill-item">Game Design</div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2 class="section-title">Awards</h2>
+                <div class="award-item">
+                    <h3 class="award-title">MIS Cinema Award 2016</h3>
+                    <p class="award-desc">Winner - "Núcleo Experimental de Cinema" competition</p>
+                </div>
+                <div class="award-item">
+                    <h3 class="award-title">Festival Internacional Entretodos 2015</h3>
+                    <p class="award-desc">Double recognition in Popular and Online Jury categories</p>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2 class="section-title">Languages</h2>
+                <div class="languages-grid">
+                    <div class="language-item">
+                        <div class="language-name">Portuguese</div>
+                        <div class="language-level">Native</div>
+                    </div>
+                    <div class="language-item">
+                        <div class="language-name">English</div>
+                        <div class="language-level">Advanced</div>
+                    </div>
+                    <div class="language-item">
+                        <div class="language-name">Spanish</div>
+                        <div class="language-level">Pre-intermediate</div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-item">
+                <div class="stat-number">15+</div>
+                <div class="stat-label">Years Experience</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">2</div>
+                <div class="stat-label">Major Awards</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">3</div>
+                <div class="stat-label">Technical Degrees</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">3</div>
+                <div class="stat-label">Languages</div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
